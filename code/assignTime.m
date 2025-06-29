@@ -35,6 +35,7 @@ dataTable_original = inputDataTable(indicesOfTimestamps,:);
 
 disp('Identifying and removing bad packets')
 % Remove any packets with timestamp that are more than 24 hours from median timestamp
+%limits data window to 24 hours surrounding median timestamp
 medianTimestamp = median(dataTable_original.timestamp);
 numSecs = 24*60*60;
 badDatePackets = union(find(dataTable_original.timestamp > medianTimestamp + numSecs),find(dataTable_original.timestamp < medianTimestamp - numSecs));
