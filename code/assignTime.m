@@ -8,7 +8,7 @@ function outputDataTable = assignTime(inputDataTable, shortGaps_systemTick)
 % Identify gaps in data (by checking deltas in timestamp, systemTick,
 % and dataTypeSequence). Consecutive packets of data without gaps
 % are referred to as 'chunks'. For each chunk, determine best estimate of
-% the first packet time, and then calculate time for each  sample based on
+% the first packet time, and then calculate time for each sample based on
 % sampling rate -- assume no missing samples. Best estimate of start time
 % for each chunk is determined by taking median (across all packets in that
 % chunk) of the offset between delta PacketGenTime and expected time to
