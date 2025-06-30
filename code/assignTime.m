@@ -1,3 +1,6 @@
+%identify and remove faulty metadata, chunk data, align with interpretable time
+
+
 function outputDataTable = assignTime(inputDataTable, shortGaps_systemTick)
 %%
 % Function for creating timestamps for each sample of valid RC+S data. Given
