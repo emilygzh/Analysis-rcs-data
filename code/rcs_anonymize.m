@@ -28,6 +28,8 @@ end
 deviceSettingFn = fullfile(fn,'DeviceSettings.json');
 outText = fileread(deviceSettingFn);
 
+%if needed, could anonymize patient ID here, -- if not double blinded
+%analysisRCS fully anonymizes & gets rid of PIIs
 
 %TO DO XXX  need to put some options in here for each file type 
 stringToAnnanoymze = 'DeviceId';
